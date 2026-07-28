@@ -8,5 +8,5 @@ import java.time.Instant;
 @Getter
 @NoArgsConstructor
 public class UserStatusUpdateRequest {
-    private Instant newLastActiveAt;
+    private Instant lastActiveAt;
 }

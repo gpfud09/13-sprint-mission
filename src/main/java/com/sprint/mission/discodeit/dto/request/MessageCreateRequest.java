@@ -8,7 +8,7 @@ import java.util.UUID;
 
 @Getter
 @NoArgsConstructor
-public class CreateMessageRequest {
+public class MessageCreateRequest {
 
     private String content;
     private UUID channelId;
@@ -16,7 +16,7 @@ public class CreateMessageRequest {
 
     private List<BinaryContentCreateRequest> attachments;
 
-    public CreateMessageRequest(String content, UUID channelId, UUID authorId) {
+    public MessageCreateRequest(String content, UUID channelId, UUID authorId) {
         this.content = content;
         this.channelId = channelId;
         this.authorId = authorId;

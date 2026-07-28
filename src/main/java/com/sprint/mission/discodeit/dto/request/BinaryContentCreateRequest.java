@@ -8,10 +8,7 @@ import java.util.UUID;
 @Getter
 @NoArgsConstructor
 public class BinaryContentCreateRequest {
-    private UUID userId;
-    private UUID messageId;
-    private String filename;
+    private String fileName;
     private String contentType;
     private byte[] bytes;
 }
-

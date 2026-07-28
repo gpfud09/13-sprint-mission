@@ -18,7 +18,7 @@ public class UserStatusResponse {
     public static UserStatusResponse from(UserStatus status) {
         return new UserStatusResponse(
                 status.getId(),
-                status.getUserId(),
+                status.getUser().getId(),
                 status.getUpdatedAt()
         );
     }

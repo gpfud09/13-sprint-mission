@@ -6,8 +6,6 @@ import lombok.NoArgsConstructor;
 @Getter
 @NoArgsConstructor
 public class PublicChannelCreateRequest {
-
     private String name;
     private String description;
-
 }

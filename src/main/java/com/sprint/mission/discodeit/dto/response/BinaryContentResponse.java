@@ -12,12 +12,12 @@ public class BinaryContentResponse {
     private UUID id;
     private String filename;
     private String contentType;
-    private int fileSize;
+    private Long fileSize;
 
     public static BinaryContentResponse from(BinaryContent content) {
         return new BinaryContentResponse(
                 content.getId(),
-                content.getFilename(),
+                content.getFileName(),
                 content.getContentType(),
                 content.getFileSize()
         );

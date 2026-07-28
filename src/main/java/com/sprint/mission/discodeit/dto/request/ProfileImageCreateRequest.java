@@ -6,9 +6,7 @@ import lombok.NoArgsConstructor;
 @Getter
 @NoArgsConstructor
 public class ProfileImageCreateRequest {
-
-        private String filename;
+        private String fileName;
         private String contentType;
         private byte[] bytes;
-
 }

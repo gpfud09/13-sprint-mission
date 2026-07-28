@@ -1,6 +1,6 @@
 package com.sprint.mission.discodeit.controller;
 
-import com.sprint.mission.discodeit.dto.request.CreateMessageRequest;
+import com.sprint.mission.discodeit.dto.request.MessageCreateRequest;
 import com.sprint.mission.discodeit.dto.request.MessageUpdateRequest;
 import com.sprint.mission.discodeit.dto.response.MessageResponse;
 import com.sprint.mission.discodeit.service.MessageService;
@@ -21,7 +21,7 @@ public class MessageController {
 
     // 메시지 생성
     @PostMapping
-    public ResponseEntity<MessageResponse> create(@RequestBody CreateMessageRequest request) {
+    public ResponseEntity<MessageResponse> create(@RequestBody MessageCreateRequest request) {
         MessageResponse response = messageService.create(request);
 
         return ResponseEntity.status(HttpStatus.CREATED).body(response);

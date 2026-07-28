@@ -1,7 +1,7 @@
 package com.sprint.mission.discodeit.service.basic;
 
 import com.sprint.mission.discodeit.dto.request.BinaryContentCreateRequest;
-import com.sprint.mission.discodeit.dto.request.CreateMessageRequest;
+import com.sprint.mission.discodeit.dto.request.MessageCreateRequest;
 import com.sprint.mission.discodeit.dto.request.MessageUpdateRequest;
 import com.sprint.mission.discodeit.dto.response.BinaryContentResponse;
 import com.sprint.mission.discodeit.dto.response.MessageResponse;
@@ -24,7 +24,7 @@ public class BasicMessageService implements MessageService {
     private final BinaryContentRepository binaryContentRepository;
 
     @Override
-    public MessageResponse create(CreateMessageRequest request) {
+    public MessageResponse create(MessageCreateRequest request) {
         Message message = new Message(request.getContent(), request.getChannelId(), request.getAuthorId());
 
         messageRepository.save(message);

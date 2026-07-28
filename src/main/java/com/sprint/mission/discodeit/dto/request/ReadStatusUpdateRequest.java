@@ -8,7 +8,5 @@ import java.time.Instant;
 @Getter
 @NoArgsConstructor
 public class ReadStatusUpdateRequest {
-
     private Instant lastReadAt;
-
 }

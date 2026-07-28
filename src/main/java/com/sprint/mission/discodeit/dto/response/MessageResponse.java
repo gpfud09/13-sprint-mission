@@ -11,7 +11,6 @@ import java.util.UUID;
 @Getter
 @AllArgsConstructor
 public class MessageResponse {
-
     private UUID id;
     private String content;
     private UUID channelId;
@@ -25,8 +24,8 @@ public class MessageResponse {
         return new MessageResponse(
                 message.getId(),
                 message.getContent(),
-                message.getChannelId(),
-                message.getAuthorId(),
+                message.getChannel().getId(),
+                message.getAuthor().getId(),
                 message.getCreatedAt(),
                 attachments
         );

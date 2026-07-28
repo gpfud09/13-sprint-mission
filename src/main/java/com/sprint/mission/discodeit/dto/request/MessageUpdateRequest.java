@@ -6,7 +6,5 @@ import lombok.NoArgsConstructor;
 @Getter
 @NoArgsConstructor
 public class MessageUpdateRequest {
-
     private String content;
-
 }
